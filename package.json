@@ -13,8 +13,7 @@
     "lint": "ng lint highcharts-angular",
     "release": "cd ./highcharts-angular && standard-version && cd ../ && node tasks/build.js && node tasks/release.js",
     "e2e": "ng e2e",
-    "preinstall": "yarn",
-    "postinstall": "yarn run build"
+    "prepare": "yarn run build"
   },
   "dependencies": {
     "@angular/animations": "9.0.0",
